@@ -23,4 +23,8 @@ public class Account {
         this.balance += amount;
     }
 
+    public void withdrawAmount(Integer amount) {
+        this.balance -= amount;
+    }
+
 }

@@ -22,4 +22,12 @@ public class AccountTest {
         assertThat(account.getBalance(), is(150));
     }
 
+    @Test
+    public void testBalanceWithdrawal() {
+        Account account = new Account();
+        account.depositAmount(500);
+        assertThat(account.balance, is(500));
+        account.withdrawAmount(50);
+        assertThat(account.balance, is(450));
+    }
 }
