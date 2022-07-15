@@ -15,4 +15,12 @@ public class Account {
         return balance;
     }
 
+    /**
+     * Add deposit amount to existing balance
+     * @param amount to be deposited
+     */
+    public void depositAmount(Integer amount) {
+        this.balance += amount;
+    }
+
 }

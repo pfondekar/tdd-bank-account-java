@@ -14,5 +14,12 @@ public class AccountTest {
         assertThat(account.getBalance(), is(0));
     }
 
+    @Test
+    public void testBalanceDeposit() {
+        Account account = new Account();
+        account.depositAmount(100);
+        account.depositAmount(50);
+        assertThat(account.getBalance(), is(150));
+    }
 
 }
