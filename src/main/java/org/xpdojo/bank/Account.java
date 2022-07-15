@@ -23,6 +23,10 @@ public class Account {
         this.balance += amount;
     }
 
+    /**
+     * Withdraw amount from balance
+     * @param amount to be withdrawn
+     */
     public void withdrawAmount(Integer amount) {
         this.balance -= amount;
     }
